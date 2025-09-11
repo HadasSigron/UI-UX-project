@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     .thankyou{padding:80px 0;text-align:center;}
     .thankyou h1{font-family:"Playfair Display",serif;margin:0 0 10px;}
@@ -18,34 +20,172 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo">
+        <img src="assets/images/Olivia Fitness (1).png" alt="FlowFit Studio Logo" />
       </a>
-      <nav class="main-nav" aria-label="Primary">
+
+      <!-- Burger (mobile only) -->
+      <button class="burger" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+
+      <nav id="primary-menu" class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="media.html">Media</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html" class="btn-link">Contact</a></li>
-        </ul>
+  <li>
+    <a class="active" href="index.html" aria-label="Home">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 11l9-8 9 8" />
+          <path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10" />
+        </svg>
+      </span>
+      <span class="label">Home</span>
+    </a>
+  </li>
+  <li>
+    <a href="about.html" aria-label="About">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="7" r="4" />
+          <path d="M5.5 21a7 7 0 0 1 13 0" />
+        </svg>
+      </span>
+      <span class="label">About</span>
+    </a>
+  </li>
+  <li>
+    <a href="media.html" aria-label="Media">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <circle cx="8.5" cy="10" r="1.5" />
+          <path d="M21 16l-5-5-4 4-2-2-4 4" />
+        </svg>
+      </span>
+      <span class="label">Media</span>
+    </a>
+  </li>
+  <li>
+    <a href="faq.html" aria-label="FAQ">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.9.4-1.5 1-1.5 1.7V14" />
+          <circle cx="12" cy="17" r="1" />
+        </svg>
+      </span>
+      <span class="label">FAQ</span>
+    </a>
+  </li>
+
+  <!-- NEW: Trivia -->
+  <li>
+    <a href="trivia.html" aria-label="Trivia">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="5" />
+          <path d="M8.5 14 7 22l5-3 5 3-1.5-8" />
+        </svg>
+      </span>
+      <span class="label">Trivia</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="contact.html" class="btn-link" aria-label="Contact">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="M3 7l9 6 9-6" />
+        </svg>
+      </span>
+      <span class="label">Contact</span>
+    </a>
+  </li>
+</ul>
+
       </nav>
     </div>
   </header>
 
+
   <main class="thankyou">
-    <div class="container">
-      <h1>Thank you!</h1>
-      <p>Your message has been received. We’ll get back to you soon.</p>
-      <a href="index.html" class="btn primary">Back to Home</a>
-    </div>
-  </main>
+  <div class="container">
+    <h1>Thank you!</h1>
+    <p>Your message has been received. We’ll get back to you soon.</p>
+    <img src="https://images.unsplash.com/photo-1561049501-e1f96bdd98fd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjM0fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Thank You Illustration" class="thankyou-img">
+    <a href="index.html" class="btn primary">Back to Home</a>
+  </div>
+</main>
 
+
+    <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+  <div class="container footer-inner">
       <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-  </footer>
+  </div>
+</footer>
+<!-- Font Awesome (icons) -->
+<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();
+    // === Burger / Drawer (mobile nav) ===
+    (function () {
+      const burger = document.querySelector('.burger');
+      const nav = document.getElementById('primary-menu');
+      if (!burger || !nav) return;
+
+      function openMenu() {
+        nav.classList.add('open');
+        burger.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('menu-open');
+      }
+      function closeMenu() {
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      }
+      function toggleMenu() {
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        expanded ? closeMenu() : openMenu();
+      }
+
+      burger.addEventListener('click', toggleMenu);
+
+      // Close when clicking a link inside the drawer
+      nav.addEventListener('click', (e) => {
+        const a = e.target.closest('a');
+        if (a) closeMenu();
+      });
+
+      // Close when clicking outside the drawer
+      document.addEventListener('click', (e) => {
+        if (!nav.classList.contains('open')) return;
+        if (nav.contains(e.target) || burger.contains(e.target)) return;
+        closeMenu();
+      });
+
+      // ESC closes
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('open')) closeMenu();
+      });
+    })();
+  </script>
 </body>
 </html>

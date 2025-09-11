@@ -1,33 +1,121 @@
 <!doctype html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FlowFit Studio | Media</title>
 
   <!-- Fonts & CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
 
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo">
+        <img src="assets/images/Olivia Fitness (1).png" alt="FlowFit Studio Logo" />
       </a>
-      <nav class="main-nav" aria-label="Primary">
+
+      <!-- Burger (mobile only) -->
+      <button class="burger" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+
+      <nav id="primary-menu" class="main-nav" aria-label="Primary">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="media.html">Media</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html" class="btn-link">Contact</a></li>
+          <li>
+            <a href="index.html" aria-label="Home">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 11l9-8 9 8" />
+                  <path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10" />
+                </svg>
+              </span>
+              <span class="label">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html" aria-label="About">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M5.5 21a7 7 0 0 1 13 0" />
+                </svg>
+              </span>
+              <span class="label">About</span>
+            </a>
+          </li>
+          <li>
+            <a class="active" href="media.html" aria-label="Media">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <circle cx="8.5" cy="10" r="1.5" />
+                  <path d="M21 16l-5-5-4 4-2-2-4 4" />
+                </svg>
+              </span>
+              <span class="label">Media</span>
+            </a>
+          </li>
+          <li>
+            <a href="faq.html" aria-label="FAQ">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.9.4-1.5 1-1.5 1.7V14" />
+                  <circle cx="12" cy="17" r="1" />
+                </svg>
+              </span>
+              <span class="label">FAQ</span>
+            </a>
+          </li>
+
+          <!-- NEW: Trivia -->
+          <li>
+            <a href="trivia.html" aria-label="Trivia">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="5" />
+                  <path d="M8.5 14 7 22l5-3 5 3-1.5-8" />
+                </svg>
+              </span>
+              <span class="label">Trivia</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="btn-link" aria-label="Contact">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="M3 7l9 6 9-6" />
+                </svg>
+              </span>
+              <span class="label">Contact</span>
+            </a>
+          </li>
         </ul>
+
       </nav>
     </div>
   </header>
+
 
   <!-- Hero -->
   <section class="hero" style="padding:48px 0;">
@@ -45,100 +133,195 @@
       <h2 class="section-title">Photos</h2>
 
       <div class="media-grid" aria-label="Photo Gallery">
-        <!-- דוגמה לפיזור יוצר-מרובע: -->
-        <a class="media-thumb wide" href="https://plus.unsplash.com/premium_photo-1663100764663-418395b1dd86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" data-caption="Dynamic group workout">
-          <img src="https://plus.unsplash.com/premium_photo-1663100764663-418395b1dd86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="Dynamic group workout" loading="lazy">
+        <a class="media-thumb wide"
+          href="https://plus.unsplash.com/premium_photo-1663100764663-418395b1dd86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+          data-caption="Dynamic group workout">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1663100764663-418395b1dd86?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+            alt="Dynamic group workout" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" data-caption="Focused training">
-          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="Focused training" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+          data-caption="Focused training">
+          <img
+            src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+            alt="Focused training" loading="lazy">
         </a>
 
-        <a class="media-thumb tall" href="https://plus.unsplash.com/premium_photo-1675263328224-42e069928ca3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" data-caption="Studio gear & atmosphere">
-          <img src="https://plus.unsplash.com/premium_photo-1675263328224-42e069928ca3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="Studio gear & atmosphere" loading="lazy">
+        <a class="media-thumb tall"
+          href="https://plus.unsplash.com/premium_photo-1675263328224-42e069928ca3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+          data-caption="Studio gear & atmosphere">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1675263328224-42e069928ca3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+            alt="Studio gear & atmosphere" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" data-caption="Color and energy">
-          <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="Color and energy" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+          data-caption="Color and energy">
+          <img
+            src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+            alt="Color and energy" loading="lazy">
         </a>
 
-        <a class="media-thumb big" href="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" data-caption="Bright training studio">
-          <img src="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D" alt="Bright training studio" loading="lazy">
+        <a class="media-thumb big"
+          href="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+          data-caption="Bright training studio">
+          <img
+            src="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D"
+            alt="Bright training studio" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Strength & calm">
-          <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Strength & calm" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Strength & calm">
+          <img
+            src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Strength & calm" loading="lazy">
         </a>
 
-        <a class="media-thumb wide" href="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Studio details">
-          <img src="https://images.unsplash.com/photo-1593476123561-9516f2097158?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Studio details" loading="lazy">
+        <a class="media-thumb wide"
+          href="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Studio details">
+          <img
+            src="https://images.unsplash.com/photo-1593476123561-9516f2097158?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Studio details" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Group energy">
-          <img src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Group energy" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Group energy">
+          <img
+            src="https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Group energy" loading="lazy">
         </a>
 
-        <a class="media-thumb tall" href="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Focus & form">
-          <img src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Focus & form" loading="lazy">
+        <a class="media-thumb tall"
+          href="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Focus & form">
+          <img
+            src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI3fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Focus & form" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Pop of color">
-          <img src="https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Pop of color" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Pop of color">
+          <img
+            src="https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMwfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Pop of color" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Calm moment">
-          <img src="https://images.unsplash.com/photo-1562771242-a02d9090c90c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQwfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Calm moment" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Calm moment">
+          <img
+            src="https://images.unsplash.com/photo-1562771242-a02d9090c90c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQwfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Calm moment" loading="lazy">
         </a>
 
-        <a class="media-thumb wide" href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Bright space">
-          <img src="https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Bright space" loading="lazy">
+        <a class="media-thumb wide"
+          href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Bright space">
+          <img
+            src="https://images.unsplash.com/photo-1597076545399-91a3ff0e71b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcyfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Bright space" loading="lazy">
         </a>
-        <a class="media-thumb wide" href="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Dynamic group workout">
-          <img src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ2fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Dynamic group workout" loading="lazy">
-        </a>
-
-        <a class="media-thumb" href="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Focused training">
-          <img src="https://images.unsplash.com/photo-1530021356476-0a6375ffe73b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjc0fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Focused training" loading="lazy">
-        </a>
-
-        <a class="media-thumb tall" href="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Studio gear & atmosphere">
-          <img src="https://plus.unsplash.com/premium_photo-1672281090544-20c9ec66395f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjkzfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Studio gear & atmosphere" loading="lazy">
-        </a>
-
-        <a class="media-thumb" href="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Color and energy">
-          <img src="https://images.unsplash.com/photo-1623946724822-ba48a838f3da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk5fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Color and energy" loading="lazy">
+        <a class="media-thumb wide"
+          href="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Dynamic group workout">
+          <img
+            src="https://images.unsplash.com/photo-1623874514711-0f321325f318?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ2fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Dynamic group workout" loading="lazy">
         </a>
 
-        <a class="media-thumb big" href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Bright training studio">
-          <img src="https://images.unsplash.com/photo-1499438075715-fc23ef376ab9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzA0fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Bright training studio" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Focused training">
+          <img
+            src="https://images.unsplash.com/photo-1530021356476-0a6375ffe73b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjc0fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Focused training" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Strength & calm">
-          <img src="https://images.unsplash.com/photo-1508215885820-4585e56135c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzM5fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Strength & calm" loading="lazy">
+        <a class="media-thumb tall"
+          href="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Studio gear & atmosphere">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1672281090544-20c9ec66395f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjkzfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Studio gear & atmosphere" loading="lazy">
         </a>
 
-        <a class="media-thumb wide" href="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Studio details">
-          <img src="https://images.unsplash.com/photo-1570440828762-ab7a993dbde8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzcwfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Studio details" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Color and energy">
+          <img
+            src="https://images.unsplash.com/photo-1623946724822-ba48a838f3da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjk5fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Color and energy" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Group energy">
-          <img src="https://images.unsplash.com/photo-1589579234083-e364ef7b8592?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzg0fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Group energy" loading="lazy">
+        <a class="media-thumb big"
+          href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Bright training studio">
+          <img
+            src="https://images.unsplash.com/photo-1499438075715-fc23ef376ab9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzA0fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Bright training studio" loading="lazy">
         </a>
 
-        <a class="media-thumb tall" href="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Focus & form">
-          <img src="https://images.unsplash.com/photo-1689877020200-403d8542d95d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTAwfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Focus & form" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Strength & calm">
+          <img
+            src="https://images.unsplash.com/photo-1508215885820-4585e56135c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzM5fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Strength & calm" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Pop of color">
-          <img src="https://images.unsplash.com/photo-1716367840407-f9414a84b325?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTU5fHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Pop of color" loading="lazy">
+        <a class="media-thumb wide"
+          href="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Studio details">
+          <img
+            src="https://images.unsplash.com/photo-1570440828762-ab7a993dbde8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzcwfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Studio details" loading="lazy">
         </a>
 
-        <a class="media-thumb" href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Calm moment">
-          <img src="https://images.unsplash.com/photo-1660557989710-1a91e7e89d1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTcyfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Calm moment" loading="lazy">
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Group energy">
+          <img
+            src="https://images.unsplash.com/photo-1589579234083-e364ef7b8592?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzg0fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Group energy" loading="lazy">
         </a>
 
-        <a class="media-thumb wide" href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1600" data-caption="Bright space">
-          <img src="https://images.unsplash.com/photo-1620213391117-0d169a917221?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjMwfHxmaXRuZXNzfGVufDB8fDB8fHww" alt="Bright space" loading="lazy">
+        <a class="media-thumb tall"
+          href="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Focus & form">
+          <img
+            src="https://images.unsplash.com/photo-1689877020200-403d8542d95d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTAwfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Focus & form" loading="lazy">
+        </a>
+
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Pop of color">
+          <img
+            src="https://images.unsplash.com/photo-1716367840407-f9414a84b325?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTU5fHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Pop of color" loading="lazy">
+        </a>
+
+        <a class="media-thumb"
+          href="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Calm moment">
+          <img
+            src="https://images.unsplash.com/photo-1660557989710-1a91e7e89d1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTcyfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Calm moment" loading="lazy">
+        </a>
+
+        <a class="media-thumb wide"
+          href="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          data-caption="Bright space">
+          <img
+            src="https://images.unsplash.com/photo-1620213391117-0d169a917221?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjMwfHxmaXRuZXNzfGVufDB8fDB8fHww"
+            alt="Bright space" loading="lazy">
         </a>
       </div>
     </div>
@@ -151,19 +334,22 @@
       <div class="video-grid">
         <div class="video-card">
           <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Inspiration video 1" loading="lazy" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/hd7UgN_Byfc" title="Inspiration video 1" loading="lazy"
+              allowfullscreen></iframe>
           </div>
           <p class="video-caption">Inspiration video 1</p>
         </div>
         <div class="video-card">
           <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Inspiration video 2" loading="lazy" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/4AoKahQ8eYs" title="Inspiration video 2" loading="lazy"
+              allowfullscreen></iframe>
           </div>
           <p class="video-caption">Inspiration video 2</p>
         </div>
         <div class="video-card">
           <div class="video-embed">
-            <iframe src="https://www.youtube.com/embed/o-YBDTqX_ZU" title="Inspiration video 3" loading="lazy" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/npPc0oi0tnQ" title="Inspiration video 3" loading="lazy"
+              allowfullscreen></iframe>
           </div>
           <p class="video-caption">Inspiration video 3</p>
         </div>
@@ -175,8 +361,26 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
     </div>
   </footer>
+
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Enlarged photo view">
@@ -189,10 +393,10 @@
 
   <script>
     // year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
 
-    // Lightbox: פתיחה בלי מעבר לקישור
-    (function(){
+    (function () {
       const items = Array.from(document.querySelectorAll('.media-grid .media-thumb'));
       const lb = document.getElementById('lightbox');
       if (!lb || !items.length) return;
@@ -204,28 +408,28 @@
       const btnNext = lb.querySelector('.lightbox-next');
       let index = 0;
 
-      function open(i){
+      function open(i) {
         index = i;
         const a = items[index];
-        img.src = a.getAttribute('href');                     // תמונה גדולה
+        img.src = a.getAttribute('href');                    
         img.alt = a.querySelector('img')?.alt || '';
         caption.textContent = a.getAttribute('data-caption') || img.alt || '';
         lb.classList.add('open');
-        lb.setAttribute('aria-hidden','false');
+        lb.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
       }
-      function close(){
+      function close() {
         lb.classList.remove('open');
-        lb.setAttribute('aria-hidden','true');
+        lb.setAttribute('aria-hidden', 'true');
         img.src = '';
         document.body.style.overflow = '';
       }
-      function prev(){ open((index - 1 + items.length) % items.length); }
-      function next(){ open((index + 1) % items.length); }
+      function prev() { open((index - 1 + items.length) % items.length); }
+      function next() { open((index + 1) % items.length); }
 
-      items.forEach((a,i)=>{
-        a.addEventListener('click', (e)=>{
-          e.preventDefault();   // << לא יוצאים לקישור
+      items.forEach((a, i) => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();   
           open(i);
         });
       });
@@ -233,14 +437,57 @@
       btnPrev.addEventListener('click', prev);
       btnNext.addEventListener('click', next);
 
-      document.addEventListener('keydown', (e)=>{
-        if(!lb.classList.contains('open')) return;
-        if(e.key === 'Escape') close();
-        if(e.key === 'ArrowLeft') prev();
-        if(e.key === 'ArrowRight') next();
+      document.addEventListener('keydown', (e) => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') prev();
+        if (e.key === 'ArrowRight') next();
       });
-      lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+      lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+    })();
+
+    // === Burger / Drawer (mobile nav) ===
+    (function () {
+      const burger = document.querySelector('.burger');
+      const nav = document.getElementById('primary-menu');
+      if (!burger || !nav) return;
+
+      function openMenu() {
+        nav.classList.add('open');
+        burger.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('menu-open');
+      }
+      function closeMenu() {
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      }
+      function toggleMenu() {
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        expanded ? closeMenu() : openMenu();
+      }
+
+      burger.addEventListener('click', toggleMenu);
+
+      // Close when clicking a link inside the drawer
+      nav.addEventListener('click', (e) => {
+        const a = e.target.closest('a');
+        if (a) closeMenu();
+      });
+
+      // Close when clicking outside the drawer
+      document.addEventListener('click', (e) => {
+        if (!nav.classList.contains('open')) return;
+        if (nav.contains(e.target) || burger.contains(e.target)) return;
+        closeMenu();
+      });
+
+      // ESC closes
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && nav.classList.contains('open')) closeMenu();
+      });
     })();
   </script>
 </body>
+
 </html>
