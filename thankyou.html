@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You | FlowFit Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .thankyou{padding:80px 0;text-align:center;}
+    .thankyou h1{font-family:"Playfair Display",serif;margin:0 0 10px;}
+    .thankyou p{color:#555;max-width:600px;margin:0 auto 24px;line-height:1.6;}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo">
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="btn-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thankyou">
+    <div class="container">
+      <h1>Thank you!</h1>
+      <p>Your message has been received. We’ll get back to you soon.</p>
+      <a href="index.html" class="btn primary">Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

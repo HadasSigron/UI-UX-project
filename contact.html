@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowFit Studio | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo">
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a class="active" href="contact.html" class="btn-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Questions, ideas, collaborations — we’d love to hear from you.</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div>
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn primary">Send</button>
+        <p id="formNote" class="form-note" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function(){
+      const form = document.getElementById('contactForm');
+      const note = document.getElementById('formNote');
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const msg = document.getElementById('message');
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+      function invalidate(field, message){
+        field.classList.add('is-invalid');
+        note.className = 'form-note error';
+        note.textContent = message;
+        field.focus();
+      }
+      function clearInvalid(field){
+        field.classList.remove('is-invalid');
+      }
+      [name, email, msg].forEach(el=> el.addEventListener('input', ()=> clearInvalid(el)));
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        if(!name.value.trim()) return invalidate(name,'Please enter your name.');
+        if(!email.value.trim()) return invalidate(email,'Please enter your email.');
+        if(!emailRegex.test(email.value.trim())) return invalidate(email,'Please enter a valid email.');
+        if(!msg.value.trim()) return invalidate(msg,'Please write a message.');
+        note.className = 'form-note success';
+        note.textContent = 'Sending...';
+        setTimeout(()=>{ window.location.href = 'thankyou.html'; },400);
+      });
+    })();
+  </script>
+</body>
+</html>

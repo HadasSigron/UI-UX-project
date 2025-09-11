@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowFit Studio | FAQ</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Tiny inline style just for the highlight mark (לא נוגע בקובץ הראשי) -->
+  <style>
+    mark.hl{
+      background: linear-gradient(135deg, var(--brand), var(--brand-accent));
+      color:#fff; padding:0 .2em; border-radius:.25em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo">
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a class="active" href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="btn-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="padding:48px 0;">
+    <div class="container">
+      <h1 style="font-family:'Playfair Display',serif;">Frequently Asked Questions</h1>
+      <p style="max-width:680px;margin:8px auto 0;color:#555;">
+        Classes, levels, bookings and studio policies — all in one place. Use the search below.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+      <p class="faq-intro">
+        New here? Start with the <span class="badge">Beginner</span> questions below.
+      </p>
+
+      <!-- Search -->
+      <div class="faq-search">
+        <input type="text" id="faqSearch" placeholder="Search questions (e.g. membership, cancel, level)..." aria-label="Search questions">
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+        <!-- 1 -->
+        <section class="acc-item" open>
+          <h3 class="sr-only">Class levels</h3>
+          <button class="acc-btn" aria-expanded="true" aria-controls="p1" id="q1">
+            What class levels do you offer?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p1" role="region" aria-labelledby="q1">
+            <div class="acc-panel-inner">
+              <p>We offer Level 1 (Beginner), Level 2 (Mixed), and Level 3 (Advanced). Not sure? Book a short intro call and we’ll recommend the best fit.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="acc-item">
+          <h3 class="sr-only">First visit</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p2" id="q2">
+            Can I try a class before I commit?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p2" role="region" aria-labelledby="q2">
+            <div class="acc-panel-inner">
+              <p>Yes — your <strong>first class is free</strong> this week. Arrive 10 minutes early and bring water.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Booking</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p3" id="q3">
+            How do I book and cancel a class?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p3" role="region" aria-labelledby="q3">
+            <div class="acc-panel-inner">
+              <p>Book online via the schedule. Cancellations are free up to 6 hours before the class. Late cancellation or no-show may be charged as a class.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Waitlist</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p4" id="q4">
+            How does the waitlist work?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p4" role="region" aria-labelledby="q4">
+            <div class="acc-panel-inner">
+              <p>If a spot opens, you’ll receive an email/SMS and be auto-added. If you can’t make it, please remove yourself to free the spot for others.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Membership</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p5" id="q5">
+            Do you have memberships or class packs?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p5" role="region" aria-labelledby="q5">
+            <div class="acc-panel-inner">
+              <p>Yes: monthly unlimited memberships and 5/10/20 class packs (valid 6 months). Students get 10% off with ID.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Prices</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p6" id="q6">
+            Where can I see prices and promotions?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p6" role="region" aria-labelledby="q6">
+            <div class="acc-panel-inner">
+              <p>Prices are listed on the pricing page. Seasonal promotions appear on our Instagram and newsletter.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Personal training</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p7" id="q7">
+            Do you offer personal training plans (1:1)?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p7" role="region" aria-labelledby="q7">
+            <div class="acc-panel-inner">
+              <p>Absolutely. We start with an assessment, set goals, and build a plan tailored to your schedule and preferences.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Beginner</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p8" id="q8">
+            I’m a beginner — which classes should I take?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p8" role="region" aria-labelledby="q8">
+            <div class="acc-panel-inner">
+              <p>Start with Level 1 and Foundations workshops. After 4–6 sessions, try a Level 2 class to progress safely.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 9 -->
+        <section class="acc-item">
+          <h3 class="sr-only">What to bring</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p9" id="q9">
+            What should I bring to class?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p9" role="region" aria-labelledby="q9">
+            <div class="acc-panel-inner">
+              <p>Comfortable clothes, clean training shoes, and water. We provide mats and basic equipment.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Injuries</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p10" id="q10">
+            I have an injury — can I still join?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p10" role="region" aria-labelledby="q10">
+            <div class="acc-panel-inner">
+              <p>Please consult your doctor first. Let the coach know before class; we’ll offer safe modifications.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 11 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Pregnancy</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p11" id="q11">
+            Are classes suitable during pregnancy/postpartum?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p11" role="region" aria-labelledby="q11">
+            <div class="acc-panel-inner">
+              <p>With medical approval, yes. We’ll adapt intensity and movements. Consider our specialized prenatal sessions.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 12 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Kids & Teens</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p12" id="q12">
+            Do you offer kids or teens classes?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p12" role="region" aria-labelledby="q12">
+            <div class="acc-panel-inner">
+              <p>We run occasional workshops for ages 12–16. Check our schedule or contact us for upcoming dates.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 13 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Seniors</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p13" id="q13">
+            Are there classes for seniors or low impact options?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p13" role="region" aria-labelledby="q13">
+            <div class="acc-panel-inner">
+              <p>Yes. Join Level 1 and Mobility & Balance sessions — designed to be joint-friendly and safe.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 14 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Facilities</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p14" id="q14">
+            Do you have showers and lockers?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p14" role="region" aria-labelledby="q14">
+            <div class="acc-panel-inner">
+              <p>Yes — showers, lockers, and filtered water are available. Bring your own towel.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 15 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Parking</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p15" id="q15">
+            Where can I park or arrive by public transport?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p15" role="region" aria-labelledby="q15">
+            <div class="acc-panel-inner">
+              <p>Street parking after 18:00 is free. We’re a 5-minute walk from the Central station (bus lines 4/18/42).</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 16 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Refunds</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p16" id="q16">
+            What’s your refund policy?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p16" role="region" aria-labelledby="q16">
+            <div class="acc-panel-inner">
+              <p>Class packs are non-refundable once activated. Memberships can be paused for travel or medical reasons.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 17 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Gift cards</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p17" id="q17">
+            Do you sell gift cards?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p17" role="region" aria-labelledby="q17">
+            <div class="acc-panel-inner">
+              <p>Yes — digital gift cards for any amount or class pack. Valid for 12 months.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 18 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Corporate</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p18" id="q18">
+            Do you run corporate or private group sessions?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p18" role="region" aria-labelledby="q18">
+            <div class="acc-panel-inner">
+              <p>We love team sessions! Contact us for on-site or in-studio programs tailored to your company.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 19 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Workshops</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p19" id="q19">
+            Do you host workshops or events?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p19" role="region" aria-labelledby="q19">
+            <div class="acc-panel-inner">
+              <p>Yes — mobility, strength foundations, and special guest coaches. Check the media page for photos.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 20 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Online</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p20" id="q20">
+            Do you offer online or hybrid classes?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p20" role="region" aria-labelledby="q20">
+            <div class="acc-panel-inner">
+              <p>From time to time, yes — follow our newsletter to get the next online cycle dates.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 21 -->
+        <section class="acc-item">
+          <h3 class="sr-only">App & notifications</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p21" id="q21">
+            Do you have an app or notifications for bookings?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p21" role="region" aria-labelledby="q21">
+            <div class="acc-panel-inner">
+              <p>Use our web app to book; enable email/SMS reminders and waitlist alerts in your profile settings.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 22 -->
+        <section class="acc-item">
+          <h3 class="sr-only">Languages</h3>
+          <button class="acc-btn" aria-expanded="false" aria-controls="p22" id="q22">
+            What languages do coaches speak?
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="acc-panel" id="p22" role="region" aria-labelledby="q22">
+            <div class="acc-panel-inner">
+              <p>Classes are in English; some coaches also speak Hebrew and Russian — ask at the front desk.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ===== Accessible accordion (no Bootstrap) =====
+    (function(){
+      const acc = document.getElementById('faqAccordion');
+      if(!acc) return;
+
+      const items = Array.from(acc.querySelectorAll('.acc-item'));
+      const btns  = items.map(i => i.querySelector('.acc-btn'));
+
+      function setOpen(item, open){
+        const btn = item.querySelector('.acc-btn');
+        if(open){
+          item.setAttribute('open','');
+          btn.setAttribute('aria-expanded','true');
+        } else {
+          item.removeAttribute('open');
+          btn.setAttribute('aria-expanded','false');
+        }
+      }
+
+      btns.forEach((btn, index)=>{
+        btn.addEventListener('click', ()=>{
+          const item = items[index];
+          const isOpen = item.hasAttribute('open');
+          // close all, then toggle current
+          items.forEach(i => setOpen(i, false));
+          setOpen(item, !isOpen);
+        });
+      });
+    })();
+
+    // ===== FAQ search + highlight =====
+    (function(){
+      const searchBox = document.getElementById('faqSearch');
+      const acc = document.getElementById('faqAccordion');
+      if(!searchBox || !acc) return;
+
+      const items = Array.from(acc.querySelectorAll('.acc-item'));
+
+      // strip previous <mark class="hl">...</mark>
+      function clearHighlights(el){
+        el.querySelectorAll('mark.hl').forEach(m=>{
+          const t = document.createTextNode(m.textContent);
+          m.replaceWith(t);
+        });
+      }
+
+      // escape regex
+      function escReg(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+      // apply highlight into btn text + panel text
+      function applyHighlight(item, term){
+        const rx = new RegExp(escReg(term), 'gi');
+        const btn = item.querySelector('.acc-btn');
+        const panelInner = item.querySelector('.acc-panel-inner');
+
+        [btn, panelInner].forEach(node=>{
+          if(!node) return;
+          clearHighlights(node);
+          if(!term) return;
+
+          // walk text nodes and wrap matches
+          const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null);
+          const texts = [];
+          while(walker.nextNode()) texts.push(walker.currentNode);
+
+          texts.forEach(txt=>{
+            const val = txt.nodeValue;
+            if(!val || !rx.test(val)) return;
+            const frag = document.createDocumentFragment();
+            let lastIdx = 0;
+            val.replace(rx, (m, idx)=>{
+              // text before match
+              if(idx > lastIdx) frag.appendChild(document.createTextNode(val.slice(lastIdx, idx)));
+              // mark
+              const mark = document.createElement('mark');
+              mark.className = 'hl';
+              mark.textContent = m;
+              frag.appendChild(mark);
+              lastIdx = idx + m.length;
+            });
+            // tail
+            if(lastIdx < val.length) frag.appendChild(document.createTextNode(val.slice(lastIdx)));
+            txt.replaceWith(frag);
+          });
+        });
+      }
+
+      function setOpen(item, open){
+        const btn = item.querySelector('.acc-btn');
+        if(open){
+          item.setAttribute('open','');
+          btn.setAttribute('aria-expanded','true');
+        } else {
+          item.removeAttribute('open');
+          btn.setAttribute('aria-expanded','false');
+        }
+      }
+
+      // live filter
+      searchBox.addEventListener('input', ()=>{
+        const term = searchBox.value.trim().toLowerCase();
+
+        // reset: show all + remove highlights
+        items.forEach(item=>{
+          item.style.display = '';
+          applyHighlight(item, ''); // clear
+        });
+
+        if(!term){
+          // no term: keep only first item open
+          items.forEach((it, i)=> setOpen(it, i===0));
+          return;
+        }
+
+        // filter + highlight + open matches
+        let anyShown = false;
+        items.forEach(item=>{
+          const text = item.textContent.toLowerCase();
+          const match = text.includes(term);
+          item.style.display = match ? '' : 'none';
+          if(match){
+            anyShown = true;
+            applyHighlight(item, term);
+          } else {
+            setOpen(item, false);
+          }
+        });
+
+        // open the first visible match
+        if(anyShown){
+          const first = items.find(it => it.style.display !== 'none');
+          if(first){
+            // close others
+            items.forEach(it=> setOpen(it, false));
+            setOpen(first, true);
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

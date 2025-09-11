@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowFit Studio | Home</title>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header + Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="btn-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Side Banner (right only, hidden by default) -->
+  <aside class="side-banner right" aria-label="Welcome Offer" data-aos="fade-left">
+    <div class="banner-card">
+      <img src="https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt="Colorful dumbbells" class="banner-img" />
+      <h4>Welcome Offer</h4>
+      <p>First class free – this week only!</p>
+      <a href="contact.html" class="banner-btn">Contact</a>
+    </div>
+  </aside>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1 data-underline>Welcome to FlowFit Studio</h1>
+      <p>Movement that connects body and mind. Group classes, personal training plans, and special workshops throughout
+        the year.</p>
+      <div class="hero-actions">
+        <a href="about.html" class="btn primary">Learn About Us</a>
+        <a href="contact.html" class="btn ghost">Book an Intro Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section class="carousel" aria-label="Featured gallery">
+    <div class="slider" tabindex="0" aria-roledescription="carousel" data-autoplay="true" data-interval="4500">
+      <article class="slide is-active">
+        <a class="slide-img" href="media.html">
+          <img src="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Dynamic group workout" loading="lazy" decoding="async" />
+        </a>
+        <div class="caption">
+          <h3><a href="media.html">Studio Vibes</a></h3>
+          <p>See the energy in our group classes.</p>
+        </div>
+      </article>
+      <article class="slide">
+        <a class="slide-img" href="about.html">
+          <img
+            src="https://media.istockphoto.com/id/1441759606/photo/happy-sportswoman-with-earbuds-running-in-the-park.jpg?b=1&s=612x612&w=0&k=20&c=GiPQXpzcPPqaVWsuGqwe8QfhXh2Lf0bmawZQabuHE8s="
+            alt="Personal training session" loading="lazy" decoding="async" />
+        </a>
+        <div class="caption">
+          <h3><a href="about.html">Coaches & Method</a></h3>
+          <p>Smart, accessible movement for every level.</p>
+        </div>
+      </article>
+      <article class="slide">
+        <a class="slide-img" href="faq.html">
+          <img src="https://images.pexels.com/photos/221210/pexels-photo-221210.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Workout equipment" loading="lazy" decoding="async" />
+        </a>
+        <div class="caption">
+          <h3><a href="faq.html">New here? Start Here</a></h3>
+          <p>Schedules, levels, sign-up and cancellations.</p>
+        </div>
+      </article>
+      <article class="slide">
+        <a class="slide-img" href="contact.html">
+          <img src="https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg" alt="Bright training studio"
+            loading="lazy" decoding="async" />
+        </a>
+        <div class="caption">
+          <h3><a href="contact.html">Book an Intro Call</a></h3>
+          <p>Let’s tailor the perfect plan for you.</p>
+        </div>
+      </article>
+      <button class="ctrl prev" aria-label="Previous slide">❮</button>
+      <button class="ctrl next" aria-label="Next slide">❯</button>
+      <div class="dots" role="tablist" aria-label="Slide indicators"></div>
+    </div>
+  </section>
+
+  <!-- About teaser -->
+  <section class="about-teaser section">
+    <div class="container split">
+      <div class="text">
+        <h2>Who We Are</h2>
+        <p>
+          We believe in smart, accessible movement for every level. Our coaches combine expertise with personal
+          attention to create real change and make you feel great.
+        </p>
+        <a href="about.html" class="link-arrow">Read more</a>
+      </div>
+      <div class="media img-card">
+        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Workout in studio" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+    </div>
+  </footer>
+
+  <script>
+    // === Carousel with setInterval (robust) ===
+    (function () {
+      const slider = document.querySelector('.slider');
+      if (!slider) return;
+
+      const slides = Array.from(slider.querySelectorAll('.slide'));
+      const prevBtn = slider.querySelector('.prev');
+      const nextBtn = slider.querySelector('.next');
+      const dotsWrap = slider.querySelector('.dots');
+
+      // Read data-attributes
+      const autoplayAttr = slider.getAttribute('data-autoplay');
+      const autoplay = autoplayAttr === null ? true : autoplayAttr === 'true';
+      const intervalAttr = parseInt(slider.getAttribute('data-interval'), 10);
+      const INTERVAL = Number.isFinite(intervalAttr) ? intervalAttr : 4500;
+
+      // Build dots (if container exists)
+      if (dotsWrap && dotsWrap.children.length === 0) {
+        slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.type = 'button';
+          dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+          dot.addEventListener('click', () => go(i, { restart: true }));
+          dotsWrap.appendChild(dot);
+        });
+      }
+
+      let index = Math.max(0, slides.findIndex(s => s.classList.contains('is-active')));
+      if (index === -1) index = 0;
+
+      let timer = null;
+
+      function render() {
+        slides.forEach((s, i) => s.classList.toggle('is-active', i === index));
+        if (dotsWrap) {
+          const dots = dotsWrap.querySelectorAll('button');
+          dots.forEach((d, i) => d.classList.toggle('active', i === index));
+        }
+      }
+
+      function go(i, opts = {}) {
+        index = (i + slides.length) % slides.length;
+        render();
+        if (opts.restart) restart();
+      }
+
+      function next() { go(index + 1, { restart: true }); }
+      function prev() { go(index - 1, { restart: true }); }
+
+      function start() {
+        if (!autoplay) return;
+        stop(); // ensure single interval
+        timer = setInterval(() => { go(index + 1); }, INTERVAL);
+      }
+
+      function stop() {
+        if (timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      }
+
+      function restart() { if (autoplay) { start(); } }
+
+      // Wire controls (if present)
+      if (prevBtn) prevBtn.addEventListener('click', prev);
+      if (nextBtn) nextBtn.addEventListener('click', next);
+
+      // Pause on hover or keyboard focus inside slider
+      slider.addEventListener('mouseenter', stop);
+      slider.addEventListener('mouseleave', start);
+      slider.addEventListener('focusin', stop);
+      slider.addEventListener('focusout', start);
+
+      // Keyboard arrows
+      slider.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') prev();
+        if (e.key === 'ArrowRight') next();
+      });
+
+      // Pause when tab hidden (saves battery, מונע באגים)
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) stop();
+        else start();
+      });
+
+      // Init
+      render();
+      start();
+    })();
+  </script>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 600 });
+</script>
+
+</body>
+</html>

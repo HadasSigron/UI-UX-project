@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowFit Studio | About</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+  <img src="assets/images/Olivia Fitness.png" alt="FlowFit Studio Logo" />
+</a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html" class="btn-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About the Company (text + studio photo) -->
+  <section class="section about-hero">
+    <div class="container about-hero-inner">
+      <div class="about-hero-text">
+        <h1>About FlowFit Studio</h1>
+        <p>
+          FlowFit Studio brings together functional training, mobility and mindful movement.
+          Our mission is to help people move better, feel stronger, and enjoy sustainable fitness.
+        </p>
+
+        <!-- Read More (bonus JS) -->
+        <button id="readMoreBtn" class="btn ghost" aria-expanded="false" aria-controls="moreContent">
+          READ MORE
+        </button>
+
+        <!-- Expanded content (hidden by default) -->
+        <div id="moreContent" class="about-more" hidden>
+          <h3>Our Approach</h3>
+          <p>
+            We combine strength, mobility and breath work to build resilient bodies. Programs scale for all levels,
+            focusing on technique, posture and gradual progression.
+          </p>
+        </div>
+      </div>
+
+      <!-- STUDIO image (moved here to sit next to company text) -->
+      <div class="media img-card">
+        <img
+          src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="FlowFit Studio interior" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Manager (manager photo + manager text) -->
+  <section class="section about-hero about-manager">
+    <div class="container about-hero-inner">
+      <!-- MANAGER photo -->
+      <figure class="about-portrait img-card">
+        <img
+          src="https://images.pexels.com/photos/3760851/pexels-photo-3760851.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          alt="Alex Morgan, Studio Manager" loading="lazy" />
+        <figcaption>Alex Morgan — Studio Manager</figcaption>
+      </figure>
+
+      <!-- MANAGER text -->
+      <div class="about-hero-text">
+        <h2>Meet Our Manager</h2>
+        <p>
+          Alex Morgan founded FlowFit Studio in 2018 with a simple vision: to create a welcoming space where anyone —
+          from complete beginners to seasoned athletes — can feel confident moving, training and growing stronger.
+        </p>
+        <p>
+          With over a decade of experience in functional training, Pilates, and mobility coaching, Alex believes fitness
+          should be sustainable, enjoyable, and deeply connected to daily life.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional: extra manager bio card (kept, as before) -->
+  <section class="section">
+    <div class="container about-owner">
+      <h3>About the Manager</h3>
+      <p>
+        Alex Morgan founded FlowFit Studio in 2018 with a simple vision: to create a welcoming space where anyone —
+        from complete beginners to seasoned athletes — can feel confident moving, training and growing stronger.
+      </p>
+      <p>
+        With over a decade of experience in functional training, Pilates, and mobility coaching, Alex believes fitness
+        should be sustainable, enjoyable, and deeply connected to daily life.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="credit">Built by Hadas Sigron • © <span id="year"></span> FlowFit Studio</p>
+    </div>
+  </footer>
+
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // READ MORE toggle (bonus JS)
+    (function(){
+      const btn = document.getElementById('readMoreBtn');
+      const more = document.getElementById('moreContent');
+      if(!btn || !more) return;
+
+      btn.addEventListener('click', () => {
+        const isHidden = more.hasAttribute('hidden');
+        if(isHidden){
+          more.removeAttribute('hidden');
+          btn.setAttribute('aria-expanded','true');
+          btn.textContent = 'READ LESS';
+        } else {
+          more.setAttribute('hidden','');
+          btn.setAttribute('aria-expanded','false');
+          btn.textContent = 'READ MORE';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
